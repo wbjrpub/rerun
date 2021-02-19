@@ -1,6 +1,14 @@
 repos:
   -   repo: local
       hooks:
+        # See https://pre-commit.com/#repository-local-hooks
+        - id: run test
+          name: Run test
+          entry: npm test
+          pass_filenames: false
+          language: node
+          always_run: true
+#          verbose: true
         - id: shellcheck
           name: shellcheck
           description: Test shell scripts with shellcheck
