@@ -4,7 +4,7 @@
   "description": "Template repository for shell-based tools",
   "scripts": {
     "lint": "shellcheck *.sh",
-    "test": "bats test.sh -t",
+    "test": "bats rerun.sh -t",
     "testl": "clear && npm run lint && npm run test",
     "testln": "npm run testl | bats-notify",
     "testlw": "./watch.sh 'npm run testl' 'bats'",
