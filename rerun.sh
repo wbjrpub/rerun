@@ -9,15 +9,13 @@ usage: rerun [<option>]
 
 Quicker re-running of previous run commands/scripts, sensitive to current-working directory.
 
-Future Ideas
-============
 Maintains a list of shell command lines for the local directory,
 and allows editing and recalling them for re-running.
 Why use this? Sometimes several non-trivial command lines are used in a directory
 for running non-trivial tasks. Recalling and editing them using the shell command line editing is not so flexible.
 
 Default usage:
-  rerun : open editor or local .rerun.sh file.
+  rerun : open editor on .rerun.sh file in current working directory.
 
 OPTIONS:
 
