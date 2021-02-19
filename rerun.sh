@@ -84,7 +84,7 @@ function rerun()
         ;;
       help)
         _rerun_usage >&2
-        exit 2
+        return 2
         ;;
       trace)
         unset_x='set +x'
@@ -93,6 +93,7 @@ function rerun()
       *)
         _rerun_error "Unknown arguments: $*"
         _rerun_usage
+        return 3
         ;;
     esac
     options_seen+=" $option "
